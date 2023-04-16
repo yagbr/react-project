@@ -1,0 +1,15 @@
+@mixin fontMedium {
+    font-weight: 500;
+}
+
+@mixin fontBlack  {
+    font-weight: 900;
+}
+
+@mixin fontRegular  {
+    font-weight: 400;
+}
+
+@mixin fontLight  {
+    font-weight: 300;
+}

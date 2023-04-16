@@ -1,0 +1,69 @@
+@import "../../styles/gobal.scss";
+
+.homeSection{
+    background-color:  var(--color-black);
+    background-size: cover;
+    width: 100%;
+    min-height: 900px;
+    --border-color: #b1b4c1;
+    .inner{
+        padding-top: calc(100px - 50px);
+      
+    }
+
+    .title{
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: var(--secondary-font);
+        @include fontBlack;
+        text-transform: uppercase;
+        @media only screen and (min-width: 1200px) and (max-width: 1599px) {
+            font-size: 100px;
+            line-height: 112px;
+
+        }
+        
+      
+    }
+
+    .singleGrid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+        .gridLitems{
+            img{
+                margin-top: 20px;
+                padding: 40px 0 0 0px;
+                margin-bottom: 34px;
+            }
+
+            .content{
+                h2{
+                    margin-bottom: 20px;
+                    @include fontRegular;
+                    font-size: 24px;
+                    color: var(--color-light);
+                    font-family: var(--primary-font);
+                }
+
+                p{
+                    font-size: 18px;
+                    color: var(--color-light);
+                    opacity: 0.75;
+                    @include fontLight;
+                    font-family: var(--primary-font);
+                }
+            }
+        }
+    }
+
+    .aboutGrid{
+        display: grid;
+        grid-template: 485.825px 1fr;
+        .gridLitems{
+            
+        }
+    }
+
+   
+}

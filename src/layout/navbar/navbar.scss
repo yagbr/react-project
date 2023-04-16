@@ -1,0 +1,58 @@
+@import "../../../src/styles/gobal.scss";
+
+.headerSection{
+    .header{
+        padding: 50px;
+        background-color: var(--color-black);
+    }
+
+    .menu{
+       @include flex-between;
+        .navbarMenu{
+           ul{
+           @include flex-center;
+            list-style: none;
+             li{
+                margin-left: 15px;
+                margin-right: 15px;
+                &:first-child{
+                    margin-left: 0;
+                }
+                a{
+                    list-style: none;
+                    text-decoration: none;
+                    padding: 20px 0;
+                    font-family: var(--primary-font);
+                    @include fontMedium;
+                    color: var(--color-light);
+                    transition: all 0.2s;
+                    &:hover{
+                        color: var(--color-pink);
+                    }
+                }
+
+                .buyBtn{
+                    padding: 0 25px;
+                    height: 46px;
+                    display: inline-block;
+                    line-height: 42px;
+                    background-color: transparent;
+                    border-radius: 6px;
+                    font-size: 14px;
+                    z-index: 2;
+                    border:2px solid var(--border-color);
+                    color: var(--color-light);
+                    transition: all 0.5s;
+                    cursor: pointer;
+                    &:hover{
+                       transform: translateY(-3px);
+                       background-color: var(--color-pink);
+                       border: 2px solid var(--color-pink);
+                    }
+
+                }
+             }
+           }
+        }
+    }
+}
